@@ -1,0 +1,64 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-color: #016f32;
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 70px;
+    margin-top: 7%;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#message-el, #welcome-el, #balance-el {
+    font-style: italic;
+}
+
+button {
+    border: 2px solid black;
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-top: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+button:hover {
+    background-color: rgb(172, 147, 7);
+    border: 2px solid whitesmoke;
+}
+@keyframes winAnimation {
+    0% { color: green; transform: scale(1); }
+    50% { color: lightgreen; transform: scale(1.2); }
+    100% { color: green; transform: scale(1); }
+}
+
+@keyframes loseAnimation {
+    0% { color: red; transform: scale(1); }
+    50% { color: pink; transform: scale(1.2); }
+    100% { color: red; transform: scale(1); }
+}
+
+.win {
+    animation: winAnimation 1s ease-in-out;
+}
+
+.lose {
+    animation: loseAnimation 1s ease-in-out;
+}
